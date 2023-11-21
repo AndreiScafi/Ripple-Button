@@ -13,3 +13,7 @@ btn.addEventListener('mouseenter', e => {
 
     btn.prepend(ripple);
 });
+
+btn.addEventListener('mouseleave', () => {
+    btn.removeChild(ripple);
+})
